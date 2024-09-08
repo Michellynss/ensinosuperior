@@ -15,7 +15,7 @@ async function loadData() {
 function drawLegend(ctx) {
     const legendX = 10;
     const legendY = 10;
-    const legendBoxSize = 15;
+    const legendBoxSize = 13;
     const legendGap = 5;
 
 
@@ -69,11 +69,11 @@ function drawChart(ano) {
         ctx.fillStyle = '#7EACB5';
         ctx.fillRect(scaleStartX + womenBarWidth + barGap, y, menBarWidth, barHeight);
 
-        // Desenho do rótulo do curso à esquerda das barras 
+        // Coloca o nome do curso à esquerda
         ctx.fillStyle = '#000';
         ctx.fillText(curso, 10, y + barHeight / 2); 
 
-        // Desenho do total à direita das barras
+        // Coloca o total à direita
         const totalBarWidth = womenBarWidth + menBarWidth + barGap; 
         ctx.fillStyle = '#333';
         ctx.fillText(totais[index].toLocaleString(), scaleStartX + totalBarWidth + 10, y + barHeight / 2); 
