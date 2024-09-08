@@ -13,10 +13,10 @@ async function loadData() {
 
 // Função para desenhar a legenda
 function drawLegend(ctx) {
-    const legendX = 10; // Posição X da legenda
-    const legendY = 10; // Posição Y da legenda
-    const legendBoxSize = 15; // Tamanho dos quadrados da legenda
-    const legendGap = 5; // Espaçamento entre os quadrados e o texto
+    const legendX = 10;
+    const legendY = 10;
+    const legendBoxSize = 15;
+    const legendGap = 5;
 
 
     ctx.fillStyle = '#C96868'; 
